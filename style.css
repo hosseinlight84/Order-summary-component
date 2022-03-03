@@ -1,0 +1,96 @@
+@font-face {
+        font-family:RedHatDisplay;
+        src: url(font/RedHatDisplay-VariableFont_wght.ttf);
+}
+
+body {  font-family: RedHatDisplay;
+         background: hsl(225, 100%, 94%) url(/images/pattern-background-desktop.svg) no-repeat top;
+}
+
+#card {   
+          width:370px;
+          background-color:white;  
+          height: 620px;
+          position:absolute;
+          top:50%;
+          left:50%;
+          transform:translate(-50% , -50%);
+          border-radius: 25px 25px 25px 25px ; 
+          display: flex;
+          flex-direction: column;
+           
+        }
+  
+#card img{ width:370px;
+           border-radius: 25px 25px 0px 0px; 
+        }
+#card h1 {  text-align: center;
+            margin-top:52px;
+            color:  hsl(223, 47%, 23%);
+            font-weight:900;
+}
+ #card p{text-align: center; 
+         margin-top: -10px;
+         color:hsl(224, 23%, 55%);
+         margin:0px 30px 0px 30px;
+         font-weight:700;
+}
+#plan {width: 310px;
+       height: 85px;
+       background-color: hsl(225, 100%, 98%);
+       align-self: center;
+       display: flex;
+       border-radius:20px;
+       margin-top:13px;
+       margin-bottom: -7px;
+}
+
+#plan img{  width:43px;
+            margin: 0px 0px 0px 25px ;
+            align-self: center;           
+}
+
+#plan-info { margin-left:12px; font-weight:900; }
+
+#plan-price {margin-left: -85px;
+             margin-top:23px;
+             font-weight:500;   
+}
+#change-txt {margin:28px 0px 0px 68px; }
+#change-txt:link {color: hsl(245, 75%, 52%);}
+                
+#payment-but {  width:300px;
+                height:40px;        
+                align-self: center; 
+                margin:35px 0px 0px 0px;   
+                border-radius:11px; 
+                background-color:hsl(245, 75%, 52%);
+                color: white;
+                font-size:16px;
+                border-width: 0px;
+                box-shadow:0px 10px 25px hsl(224, 23%, 55%);
+                z-index:1;
+                font-family: RedHatDisplay;
+                font-weight:900;
+        }
+#cancel {    width:300px;
+             height:38px;        
+             align-self: center; 
+             margin:21px 0px 0px 0px;   
+             border-radius:11px; 
+             font-size:16px;
+             border-width: 0px;
+             background-color:white;
+             color: hsl(224, 23%, 55%);
+             font-family: RedHatDisplay;
+             font-weight:900;
+}
+
+@media screen and (width:375px){
+       body{ background: hsl(225, 100%, 94%) url(/images/pattern-background-mobile.svg) no-repeat top;}
+
+}
+
+        
+
+
